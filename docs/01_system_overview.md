@@ -1,4 +1,3 @@
-</> Markdown
 # System Overview Document
 ## 1. Project Title
 Simplified Flight Control System - Altitude Hold Function
