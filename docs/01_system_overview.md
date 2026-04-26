@@ -9,35 +9,35 @@ This project uses a commercial passenger aircraft, similar to the Airbus A320, a
 ## 4. System Under Test
 The System Under Test is the Altitude Hold Control Function.
 The function receives:
--target altitude
--current altitude
--current vertical speed
--current airspeed
--sensor validity status
+- target altitude
+- current altitude
+- current vertical speed
+- current airspeed
+- sensor validity status
 The function outputs:
--pitch command
--thrust command
--system mode
--warning status
+- pitch command
+- thrust command
+- system mode
+- warning status
 ## 5. System Boundary
 ### Inside the system boundary
 The following are included:
--Input validation
--Altitude error calculation
--Pitch command calculation
--Thrust command calculation
--Mode selection logic
--Fault handling logic
--Warning generation
+- Input validation
+- Altitude error calculation
+- Pitch command calculation
+- Thrust command calculation
+- Mode selection logic
+- Fault handling logic
+- Warning generation
 ### Outside the system boundary
 The following are excluded:
--Real aircraft aerodynamics
--Full aircraft simulation
--Weather effects
--Pilot behaviour modelling
--Real Airbus A320 flight control laws
--Hardware-in-the-loop testing
--Certification-level compliance
+- Real aircraft aerodynamics
+- Full aircraft simulation
+- Weather effects
+- Pilot behaviour modelling
+- Real Airbus A320 flight control laws
+- Hardware-in-the-loop testing
+- Certification-level compliance
 ## 6. Operating Modes
 The system has three operating modes:
 | Mode | Description |
@@ -67,11 +67,11 @@ The system has three operating modes:
 | Warning flag | Boolean | True / False | Indicates invalid input or unsafe condition |
 
 ## 9. Assumptions
--Aircraft behaviour is simplified and linear.
--Environmental effects such as wind and turbulence are ignored.
--The system is not intended to represent the real Airbus A320 flight control system.
--Values are representative for a commercial aircraft-style scenario.
--The goal is to demonstrate V&V process, not aerodynamic accuracy.
+- Aircraft behaviour is simplified and linear.
+- Environmental effects such as wind and turbulence are ignored.
+- The system is not intended to represent the real Airbus A320 flight control system.
+- Values are representative for a commercial aircraft-style scenario.
+- The goal is to demonstrate V&V process, not aerodynamic accuracy.
 ## 10. High-Level Behaviour
 If the current altitude is below the target altitude, the system should command positive pitch and increased thrust.
 If the current altitude is above the target altitude, the system should command a negative pitch and reduced thrust.
