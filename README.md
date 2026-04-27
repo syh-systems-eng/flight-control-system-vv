@@ -50,7 +50,7 @@ A simplified **Altitude Hold Control Function** that:
   - Degraded mode  
   - Fail-safe mode  
 - Built a full requirements traceability matrix  
-- Produced a structured test report including defect identification  
+- Produced a structured test report including defect identification
 
 ---
 
@@ -106,6 +106,9 @@ This project reflects key skills required for Systems Integration and V&V roles:
 - Add additional sensor failure scenarios
 - Introduce timing/performance requirements
 - Implement a lightweight simulation model in Python
+- Introduce environmental disturbance scenarios (e.g. turbulence, wind gusts) by simulating unstable or rapidly changing input data
+- Evaluate system robustness under fluctuating altitude and vertical speed conditions
+- Extend fault handling to cover sensor noise and inconsistent data caused by environmental effects
 
 ---
 
