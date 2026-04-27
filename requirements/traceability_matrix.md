@@ -14,3 +14,5 @@ This matrix maps system requirements to corresponding test cases to ensure full 
 | FCS-REQ-008 | Enter Degraded mode for non-critical failure | TC-006 | Not Verified |
 | FCS-REQ-009 | Enter Fail-safe mode for critical failure | TC-007 | Not Verified |
 | FCS-REQ-010 | Command neutral pitch in Fail-safe mode | TC-008 | Not Verified |
+| FCS-REQ-011 | Maintain stable pitch under fluctuating valid altitude input | TC-009 | Not Verified |
+| FCS-REQ-012 | Detect unstable or inconsistent altitude input data | TC-010 | Not Verified |
