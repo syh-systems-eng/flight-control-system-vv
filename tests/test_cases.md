@@ -97,3 +97,27 @@ This document defines initial system-level test cases for the Simplified Flight 
 | Expected Result | Pitch command = 0 degrees. |
 | Verification Method | Test |
 | Status | Not Run |
+
+## TC-009 — Handle altitude fluctuation under turbulence
+
+| Field | Details |
+|---|---|
+| Requirement(s) | FCS-REQ-003, FCS-REQ-004 |
+| Objective | Verify system response to rapid altitude changes simulating turbulence. |
+| Preconditions | System is in Normal mode. |
+| Input | Current altitude fluctuates rapidly around target (e.g. 10,000 → 10,300 → 9,700 ft) |
+| Expected Result | System adjusts pitch command to stabilise altitude without exceeding limits. |
+| Verification Method | Test |
+| Status | Not Run |
+
+## TC-010 — Handle unstable altitude sensor data
+
+| Field | Details |
+|---|---|
+| Requirement(s) | FCS-REQ-006, FCS-REQ-008 |
+| Objective | Verify system behaviour when altitude input becomes inconsistent. |
+| Preconditions | System is in Normal mode. |
+| Input | Altitude readings oscillate rapidly or contain spikes |
+| Expected Result | System detects instability and transitions to Degraded mode if required. |
+| Verification Method | Test |
+| Status | Not Run |
