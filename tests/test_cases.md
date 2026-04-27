@@ -61,3 +61,39 @@ This document defines initial system-level test cases for the Simplified Flight 
 | Expected Result | Pitch command is limited to no more than +15 degrees. |
 | Verification Method | Test |
 | Status | Not Run |
+
+## TC-006 — Enter Degraded mode for non-critical input failure
+
+| Field | Details |
+|---|---|
+| Requirement(s) | FCS-REQ-008 |
+| Objective | Verify that the system enters Degraded mode when a non-critical input is invalid. |
+| Preconditions | System is in Normal mode. Altitude input is valid. |
+| Input | Airspeed sensor valid = False |
+| Expected Result | System mode changes to Degraded. Warning flag is set to True. |
+| Verification Method | Test |
+| Status | Not Run |
+
+## TC-007 — Enter Fail-safe mode for critical input failure
+
+| Field | Details |
+|---|---|
+| Requirement(s) | FCS-REQ-009 |
+| Objective | Verify that the system enters Fail-safe mode when critical altitude data is unavailable. |
+| Preconditions | System is in Normal mode. |
+| Input | Altitude sensor valid = False |
+| Expected Result | System mode changes to Fail-safe. Warning flag is set to True. |
+| Verification Method | Test |
+| Status | Not Run |
+
+## TC-008 — Command neutral pitch in Fail-safe mode
+
+| Field | Details |
+|---|---|
+| Requirement(s) | FCS-REQ-010 |
+| Objective | Verify that the system commands a neutral pitch output in Fail-safe mode. |
+| Preconditions | System has entered Fail-safe mode. |
+| Input | Fail-safe mode active |
+| Expected Result | Pitch command = 0 degrees. |
+| Verification Method | Test |
+| Status | Not Run |
