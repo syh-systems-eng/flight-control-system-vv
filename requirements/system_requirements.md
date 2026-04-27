@@ -27,3 +27,9 @@ The system shall enter Fail-safe mode when critical input data required for cont
 
 ## FCS-REQ-010
 The system shall command a neutral pitch output (0 degress) when operating in Fail-safe mode.
+
+## FCS-REQ-011
+The system shall maintain stable pitch control under moderate fluctuations in valid altitude input.
+
+## FCS-REQ-012  
+The system shall detect inconsistent or unstable altitude input data.
